@@ -23,7 +23,7 @@
 <h3 align="left">Languages and Tools:</h3>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,c,go,rust,dart,flutter,androidstudio,html,css,sass,react,next,electron,tauri,tailwind,vscode,idea,mongodb,postgres,graphql,nodejs,arch,docker,firebase,supabase,postman,py,pytorch,tensorflow" />
+    <img src="https://skillicons.dev/icons?i=js,c,go,rust,dart,py,flutter,androidstudio,html,css,sass,next,tauri,tailwind,vscode,mongodb,nodejs,arch,docker,supabase,tensorflow" />
   </a>
 </p>
 
