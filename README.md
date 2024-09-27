@@ -13,7 +13,7 @@
 
 - 👨‍💻 All of my projects are available at [https://website-yigitsh.vercel.app/](https://website-yigitsh.vercel.app/)
 
-- 📫 How to reach me **sherlockyigit.dev@gmail.com**
+- 📫 How to reach me **yigit433.devs@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
