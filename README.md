@@ -5,11 +5,11 @@
 <h1 align="center">Hi 👋, I'm Yiğit</h1>
 <h3 align="center">Full-stack Developer and Data Scientist from Türkiye</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=yigit433" alt="yigit433" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app?username=yigit433&theme=algolia" alt="yigit433" /></a> </p>
 
-- 🔭 I’m currently working on [jsonparser](https://github.com/yigit433/jsonparser)
+- 🔭 I’m currently working on **AI Projects**
 
-- 🌱 I’m currently learning **Pandas, Tensorflow, Dart & Flutter**
+- 🌱 I’m currently learning **Pandas, Tensorflow, NumPy**
 
 - 👨‍💻 All of my projects are available at [https://website-yigitsh.vercel.app/](https://website-yigitsh.vercel.app/)
 
@@ -23,7 +23,8 @@
 <h3 align="left">Languages and Tools:</h3>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,react,next,tailwind,c,cs,dotnet,go,mongodb,docker,r,py,supabase,tensorflow,opencv,dart,flutter,androidstudio,debian,figma" />
+    <img src="https://skillicons.dev/icons?i=js,ts,go,py,r" />
+    <img src="https://skillicons.dev/icons?i=figma,next,tailwind,fastapi,prisma,docker,tensorflow,sklearn,pytorch,opencv,mongodb,postgres,debian" />
   </a>
 </p>
 
