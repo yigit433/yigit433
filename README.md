@@ -11,7 +11,7 @@
 
 - 🌱 I’m currently learning **Pandas, Tensorflow, NumPy**
 
-- 👨‍💻 All of my projects are available at [https://website-yigitsh.vercel.app/](https://website-yigitsh.vercel.app/)
+- 👨‍💻 All of my projects are available at [Portfolio](https://yigit433.vercel.app/)
 
 - 📫 How to reach me **yigit433.devs@gmail.com**
 
