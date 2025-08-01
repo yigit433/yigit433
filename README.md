@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">Hi 👋, I'm Yiğit</h1>
-<h3 align="center">Full-stack Developer and Data Scientist from Türkiye</h3>
+<h3 align="center"> Software Developer · Backend Systems & Data Modeling · Statistics Student from Türkiye</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app?username=yigit433&theme=algolia" alt="yigit433" /></a> </p>
 
