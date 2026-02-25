@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">Hi 👋, I'm Yiğit</h1>
-<h3 align="center"> Software Developer · Backend Systems & Data Modeling · Statistics Student from Türkiye</h3>
+<h3 align="center">Full-Stack Developer · Data Architecture & System Design · Statistics Student from Türkiye</h3>
 
 - 🔭 I’m currently working on **AI Projects**
 
