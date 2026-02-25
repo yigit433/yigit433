@@ -28,11 +28,3 @@
     <img src="https://skillicons.dev/icons?i=figma,next,tailwind,fastapi,prisma,docker,tensorflow,sklearn,pytorch,opencv,mongodb,postgres,debian" />
   </a>
 </p>
-
-<p>
-  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=yigit433&show_icons=true&theme=merko&locale=en&layout=compact"/>
-</p>
-
-<p>
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=yigit433&show_icons=true&theme=merko&locale=en" alt="yigit433"/>
-</p>
