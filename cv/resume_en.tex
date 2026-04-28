@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{extarticle}
+\pagenumbering{gobble}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{datetime}
+\usepackage{graphicx}
+\titleformat{\section}{\large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\begin{document}
+\begin{center}
+    \begin{minipage}{\textwidth}
+        \centering
+        {\LARGE\textbf{Yiğit Efe Avcı}} \hspace{2pt} {\LARGE{Full-Stack Developer}}\\[10pt]
+        \href{mailto:yigit433.devs@gmail.com}{yigit433.devs@gmail.com} \textbullet\
+        \href{https://github.com/yigit433}{github.com/yigit433} \textbullet\
+        \href{https://linkedin.com/in/yigitefeavci}{linkedin.com/in/yigitefeavci} \textbullet\
+        \href{https://yigit433.vercel.app}{yigit433.vercel.app}
+    \end{minipage}
+\end{center}
+\section{About Me}
+I am a statistics undergraduate with a strong interest in data science, software development, and statistical modeling. I specialize in transforming data into actionable insights using tools like Python, R, and SPSS. My technical focus extends to full-stack development, where I utilize technologies such as React, Next.js, Go, and PostgreSQL to build scalable, efficient, and user-centric web applications.
+\section{Experience}
+\textbf{\href{https://codeshare.me}{Code Share}} \hfill London, United Kingdom\\
+\textit{Managing Partner (Self-employed)} \hfill August 2020 -- May 2025\\
+\textit{Software Developer (Freelance, Remote)} \hfill June 2019 -- June 2023\\[6pt]
+\textbf{WiFiCeps} \hfill Türkiye\\
+\textit{Backend Developer (Project-based)} \hfill January 2023 -- February 2023
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Developed a custom media server for the WiFiCeps educational platform.
+    \item Designed a system that monitored videos uploaded to Google Drive, detected updates, and automatically synchronized them with the platform's existing versions.
+    \item Implemented an automated process that removed videos from the media server when they were deleted from Google Drive.
+    \item Built a Python-based automation framework and an FFmpeg-powered video processing algorithm.
+    \item Optimized video size and quality, reducing files to approximately \textasciitilde50MB through automated processing.
+    \item Significantly reduced playback issues and improved overall streaming performance.
+\end{itemize}
+\textbf{Konda Research and Consultancy} \hfill Türkiye\\
+\textit{Field Researcher (Surveyor)} \hfill Month Year -- Month Year
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Conducted fieldwork for nationwide surveys, including face-to-face interviews and data collection.
+    \item Ensured accurate and reliable input for research projects by following methodological standards and engaging directly with participants.
+\end{itemize}
+\section{Projects}
+\textbf{\href{https://pickin.co}{Pickin} — Real-time giveaway platform} \hfill Next.js, TypeScript, PostgreSQL\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Real-time participant and state updates via Server-Sent Events backed by Redis Pub/Sub.
+    \item Scheduled giveaway start/end and automatic winner selection via NATS JetStream job queue.
+    \item OAuth-gated participation rules (YouTube subscribe/like, Twitch follow) using Better Auth.
+    \item RBAC system (4 roles, 15 permissions), i18n (TR/EN), QR sharing, OBS broadcast view, CSV export.
+    \item Stack: Next.js 16 (App Router, Turbopack), Drizzle ORM, Tailwind CSS v4, Framer Motion, TipTap, Docker.
+\end{itemize}
+\textbf{\href{https://deckplane.com}{Deckplane} — Distributed Docker management platform} \hfill Bun, Hono, TypeScript, PostgreSQL\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Designed a control-plane / host-agent architecture: agents on each Docker host communicate with a central API via WebSocket and REST.
+    \item Manage containers, images, networks and volumes across multiple servers from a single API with an async command queue.
+    \item WebSocket-based interactive container terminal with session recording, plus real-time log and CPU/memory stat streaming.
+    \item Deployment automation from GitHub repos or docker-compose archives, with OAuth-based GitHub integration (branches, secrets, webhooks).
+    \item RBAC (4 roles), multi-tenancy, immutable audit logging, token-bucket rate limiting, auto-generated OpenAPI 3.0 + Swagger UI.
+    \item Stack: Bun, Hono, Drizzle ORM, JWT (jose) + Argon2, Zod, Pino, AES-256-GCM, Traefik (HTTPS + WebSocket).
+\end{itemize}
+\textbf{\href{https://github.com/yigit433/kommando}{kommando} — CLI toolkit for Go} \hfill Go\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Lightweight library for building command-line tools with subcommands and flag parsing.
+    \item Focused on ergonomic API design and zero external dependencies.
+\end{itemize}
+\textbf{\href{https://github.com/yigit433/helper-tui}{helper-tui} — Terminal UI utility} \hfill Rust\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Cross-platform TUI that streamlines common developer workflows from the terminal.
+    \item Built in Rust with an emphasis on responsiveness and minimal binary size.
+\end{itemize}
+\textbf{\href{https://github.com/yigit433/feather-stream}{feather-stream} — Google Drive media player} \hfill Tauri, React, TypeScript\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Desktop application for streaming media files stored on Google Drive.
+    \item Built end-to-end with Tauri (Rust core) and a React/TypeScript frontend.
+\end{itemize}
+\textbf{\href{https://github.com/yigit433/jsonparser}{jsonparser} — JSON parser written in C} \hfill C\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item From-scratch JSON document parser and processor implemented in C.
+    \item Hand-written tokenizer and recursive-descent parser; no external dependencies.
+\end{itemize}
+\section{Skills}
+\textbf{Languages:} Python, R, TypeScript, JavaScript, GoLang, Rust, Dart \\
+\textbf{Data \& ML:} Pandas, Polars, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, PyTorch, SPSS \\
+\textbf{Backend:} Bun, Node.js, Express.js, REST APIs \\
+\textbf{Frontend:} React, Next.js, Tailwind CSS, Framer Motion \\
+\textbf{Mobile / Cross-Platform:} Flutter, React Native, Tauri \\
+\textbf{Databases:} PostgreSQL, MongoDB, MySQL, Supabase \\
+\textbf{Tools:} Git, Docker, Drizzle ORM, Postman
+\section{Education}
+\textbf{Istanbul Commerce University} \hfill Istanbul, Türkiye\\
+\textit{B.Sc. in Statistics} \hfill 2023 -- 2027\\
+\end{document}
