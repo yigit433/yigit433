@@ -1,0 +1,47 @@
+name: Build CV
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - 'cv/**.tex'
+      - '.github/workflows/build-cv.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile resumes (English & Turkish)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            resume_en.tex
+            resume_tr.tex
+          working_directory: cv
+          latexmk_use_xelatex: true
+
+      - name: Upload PDFs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdfs
+          path: |
+            cv/resume_en.pdf
+            cv/resume_tr.pdf
+
+      - name: Commit PDFs back to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cv/resume_en.pdf cv/resume_tr.pdf
+          if git diff --staged --quiet; then
+            echo "No PDF changes to commit."
+          else
+            git commit -m "ci: rebuild CV PDFs [skip ci]"
+            git push
+          fi
