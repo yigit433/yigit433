@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,15 +50,13 @@ jobs:
  
       - name: Inject Phone Number
         # Sadece PHONE_NUMBER secret'ı doluysa bu adım çalışır
-        if: ${{ secrets.PHONE_NUMBER != '' }}
-        env:
-          PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
+        if: ${{ env.PHONE_NUMBER != '' }}
         run: |
           echo "Telefon numarası bulundu, özel CV hazırlanıyor..."
           sed -i 's|yigitefeavci@outlook.com.tr} \\textbullet\\|yigitefeavci@outlook.com.tr} \\textbullet\\ \\href{tel:'"$PHONE_NUMBER"'}{'"$PHONE_NUMBER"'} \\textbullet\\|g' cv/*.tex
 
       - name: Compile Private Resumes
-        if: ${{ secrets.PHONE_NUMBER != '' }}
+        if: ${{ env.PHONE_NUMBER != '' }}
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
@@ -68,7 +68,7 @@ jobs:
           latexmk_use_xelatex: true
 
       - name: Send Private PDFs via Telegram Bot
-        if: ${{ secrets.PHONE_NUMBER != '' }}
+        if: ${{ env.PHONE_NUMBER != '' }}
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
