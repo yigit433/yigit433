@@ -1,62 +1,69 @@
 \documentclass[10pt,a4paper]{extarticle}
 \pagenumbering{gobble}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
+
+\setmainfont{Times New Roman}
+
 \usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{datetime}
 \usepackage{graphicx}
+
 \titleformat{\section}{\large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{12pt}{8pt}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
 \begin{document}
 \begin{center}
     \begin{minipage}{\textwidth}
         \centering
-        {\LARGE\textbf{Yiğit Efe Avcı}} \hspace{2pt} {\LARGE{Statistics \& Data Science}}\\[10pt]
+        {\LARGE\textbf{Yiğit Efe Avcı}} \hspace{4pt} {\Large\text{---}\hspace{4pt}Statistics \& Data Science}\\[8pt]
         \href{mailto:yigit433.devs@gmail.com}{yigit433.devs@gmail.com} \textbullet\
         \href{https://github.com/yigit433}{github.com/yigit433} \textbullet\
         \href{https://linkedin.com/in/yigitefeavci}{linkedin.com/in/yigitefeavci} \textbullet\
         \href{https://yigit433.vercel.app}{yigit433.vercel.app}
     \end{minipage}
 \end{center}
+
 \section{Education}
 \textbf{Istanbul Commerce University} \hfill Istanbul, Türkiye\\
 \textit{B.Sc. in Statistics} \hfill 2023 -- 2027\\
+
 \section{Profile}
 Statistics undergraduate with a strong interest in data science, statistical modeling, and survey research. Hands-on experience with Python, R, and SPSS, alongside modern data libraries (Pandas, Polars, Scikit-learn). Combine nationwide fieldwork experience with software engineering skills used to build data collection, automation, and enrichment tools.
+
 \section{Experience}
 \textbf{Konda Research and Consultancy} \hfill Türkiye\\
 \textit{Field Researcher (Surveyor)} \hfill Month Year -- Month Year
-\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\begin{itemize}[leftmargin=*,noitemsep,topsep=2pt]
     \item Conducted fieldwork for nationwide surveys, including face-to-face interviews and data collection.
     \item Ensured accurate and reliable input for research projects by following methodological standards and engaging directly with participants.
 \end{itemize}
-\textbf{WiFiCeps} \hfill Türkiye\\
-\textit{Backend Developer (Project-based)} \hfill January 2023 -- February 2023
-\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-    \item Built a Python-based automation framework with an FFmpeg-powered video processing pipeline.
-    \item Designed a system that monitored Google Drive uploads, detected updates, and synchronized them with the platform automatically.
-    \item Optimized video size and quality through automated processing, reducing files to approximately \textasciitilde50MB.
-\end{itemize}
-\textbf{\href{https://codeshare.me}{Code Share}} \hfill London, United Kingdom\\
-\textit{Managing Partner (Self-employed)} \hfill August 2020 -- May 2025\\
-\textit{Software Developer (Freelance, Remote)} \hfill June 2019 -- June 2023\\
+
 \section{Projects}
-\textbf{\href{https://pickin.co}{Pickin} — Real-time giveaway platform} \hfill Next.js, TypeScript, PostgreSQL\\
-\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\textbf{Kurumzeka --- AI-powered corporate search and data classification system} \hfill Python, PostgreSQL, Redis, Pandas\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=2pt]
+    \item Developed a dynamic scoring and filtering algorithm that evaluates search engine API results (Title, URL, Snippet) based on target foundation/association keyword matches.
+    \item Built data pipelines using Pandas to clean and transform raw search inputs into optimized, structured formats tailored for LLM consumption.
+    \item Integrated AI Agents for real-time automated data categorization, utilizing Redis for efficient queue management and caching.
+\end{itemize}
+
+\textbf{\href{https://pickin.co}{Pickin} --- Real-time giveaway platform} \hfill Next.js, TypeScript, PostgreSQL\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=2pt]
     \item Real-time participant and state updates via Server-Sent Events backed by Redis Pub/Sub.
     \item Scheduled job processing via NATS JetStream and OAuth-gated participation rules.
 \end{itemize}
-\textbf{\href{https://deckplane.com}{Deckplane} — Distributed Docker management platform} \hfill Bun, Hono, TypeScript, PostgreSQL\\
-\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+
+\textbf{\href{https://deckplane.com}{Deckplane} --- Distributed Docker management platform} \hfill Bun, Hono, TypeScript, PostgreSQL\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=2pt]
     \item Control-plane / host-agent architecture; agents communicate with a central API via WebSocket and REST.
     \item Deployment automation from GitHub repos with RBAC, audit logging, and auto-generated OpenAPI 3.0 docs.
 \end{itemize}
+
 \section{Skills}
-\textbf{Data \& Statistics:} Python, R, SPSS, Pandas, Polars, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, PyTorch \\
-\textbf{Languages:} Python, R, TypeScript, JavaScript, GoLang, Rust, Dart \\
-\textbf{Engineering:} Node.js, Bun, Next.js, React, PostgreSQL, MongoDB, Docker \\
-\textbf{Tools:} Jupyter, Git, Drizzle ORM, Postman
+\textbf{Programming Languages:} Python, R, TypeScript, JavaScript, Go, Rust, Dart, C\# \\
+\textbf{Data Science \& Statistics:} Pandas, Polars, NumPy, Scikit-learn, TensorFlow, PyTorch, SPSS, Matplotlib, Seaborn \\
+\textbf{Backend \& Web Technologies:} Node.js, Bun, Next.js, React, Hono, REST API, WebSockets \\
+\textbf{Database \& Infrastructure:} PostgreSQL, MongoDB, Redis, NATS, Docker, Drizzle ORM, Git, Postman
 \end{document}
