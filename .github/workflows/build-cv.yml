@@ -27,6 +27,7 @@ jobs:
             resume_stats_tr.tex
           working_directory: cv
           latexmk_use_xelatex: true
+          extra_system_packages: "msttcorefonts"
 
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v4
